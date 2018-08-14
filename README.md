@@ -1,4 +1,4 @@
-# Project Title
+# NIST SP 800-22 Statistical Test Suite
 
 Testing random numbers using NIST SP800-22 Suite
 
