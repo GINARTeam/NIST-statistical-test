@@ -13,4 +13,4 @@ Run the tests with the following command:
 python test.py
 ```
 ## Results
-The results are located in `result` folders. All the details will be saved in `csv` files
+The results are located in `result` folders. All the details will be saved in `csv` files. Read the `test_report` file for more detail.
