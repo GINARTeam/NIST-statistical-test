@@ -65,5 +65,5 @@ Sample of `png`:
 
 ![](https://raw.githubusercontent.com/ginarteam/randomness-tests/master/result/01.png)
 
-#### Report
+### Report
 Read [`test_report`](https://github.com/ginarteam/randomness-tests/blob/master/Test_Report.pdf) for more detail of Test Suite
