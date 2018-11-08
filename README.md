@@ -15,7 +15,7 @@ This is implementation of NIST's statistical test suite for Random Number Genera
   
 > Generators suitable for use in cryptographic applications may need to meet stronger requirements than for other applications.  In particular, their outputs must be unpredictable in the absence of knowledge of the inputs.  Some criteria for characterizing and selecting appropriate generators are discussed in this document.  The subject of statistical testing and its relation to cryptanalysis is also discussed, and some recommended statistical tests are provided.  These tests may be useful as a first step in determining whether or not a generator is suitable for a particular cryptographic application.  However, no set of statistical tests can absolutely certify a generator as appropriate for usage in a particular application, i.e., statistical testing cannot serve as a substitute for cryptanalysis.  The design and cryptanalysis of generators is outside the scope of this paper.
 
-
+[NIST SP 800-22 Statistical Test Suite](https://nvlpubs.nist.gov/nistpubs/legacy/sp/nistspecialpublication800-22r1a.pdf)
 
 ### Installation
 GINAR Random test requires  **Python 2.7** to run.
