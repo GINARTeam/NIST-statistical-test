@@ -1,4 +1,4 @@
-[![](//www.ginar.io/wp-content/themes/ginar/assets/img/logo2.svg)](https://ginar.io)
+[![](https://www.ginar.io/wp-content/themes/ginar/assets/img/logo2.svg)](https://ginar.io)
 # GINAR Statistical test
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://github.com/ginarteam) [![Build  https://gitter.im/{ORG-or-USERNAME}/{REPO-NAME}](https://badges.gitter.im/Join%20Chat.svg)](https://t.me/GINAR_io) 
 
@@ -62,6 +62,7 @@ Sample of `csv`:
 |256|	10.25|	0.247915841547624|	True|
 
 Sample of `png`:
+
 ![](https://raw.githubusercontent.com/ginarteam/randomness-tests/master/result/01.png)
 
 #### Report
