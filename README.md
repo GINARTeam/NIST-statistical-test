@@ -31,7 +31,7 @@ $ pip install matplotlib
 ```
 ### Get data for random test
 
-You need a dataset of random number for the test. We have build a function that help you get data from GINAR:
+You need a dataset of random number for the test. We have built a function that help you get data from GINAR:
 - Login your account on GINAR
 - Initialize your session key
 - Copy the init-session-key link (url)
