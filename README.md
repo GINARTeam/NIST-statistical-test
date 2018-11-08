@@ -27,6 +27,7 @@ $ git clone https://github.com/ginarteam/randomness-tests.git
 ```sh
 $ pip install requests
 $ pip install numpy
+$ pip install matplotlib
 ```
 ### Get data for random test
 
