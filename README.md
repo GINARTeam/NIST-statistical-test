@@ -36,7 +36,7 @@ You need a dataset of random number for the test. We have built a function that 
 - Initialize your session key
 - Copy the init-session-key link (url)
 
-This test suite requires 8000 numbers as minimum. We recommemd using 2000000 numbers.
+This test suite requires 8000 numbers as minimum. We recommend using 2000000 numbers.
 ### Run the test
 ```sh
 $ cd randomness-tests
