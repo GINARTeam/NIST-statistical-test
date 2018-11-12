@@ -1,5 +1,6 @@
 import csv
-
+import getInput
+import plot
 testlist = [
         'monobit_test',
         'frequency_within_block_test',
@@ -18,6 +19,8 @@ testlist = [
         'random_excursion_variant_test'
         ]
 
+# Get data set
+getInput.getInput()    
 def main():
     input = "input.txt" # input file containing bit strings
 
@@ -59,14 +62,13 @@ def main():
             fo[i] = open(output[i], mode="w")
             writer[i] = csv.DictWriter(fo[i], fieldnames=fieldnames[i])
             writer[i].writeheader()
-
-    fi = open(input, "r+") # input file
+        
+    #fi = open(input, "r") # input file
 
     result = [None]*NUM_TEST
 
 
     for i in range(NUM_TEST):
-
         total_count = 0
         success_count =0
         p_average = 0.0
@@ -76,7 +78,7 @@ def main():
         else:
             testFile = __import__(str(i+1) + "_" + testlist[i])
 
-        fi = open(input, "r+") # input file
+        fi = open(input, "r") # input file
 
         '''
         Handle special cases: concatenate multiple lines into one to obtain 
@@ -84,12 +86,15 @@ def main():
         '''
         # binary_matrix_rank_test
         if i == 4:
-            # count = 0
+            
             bits = ''
             for line in fi:
+
                 if len(bits) < 38912*2: #recommended input size
                     bits += line[:-1]
+                    
                 else:
+                    
                     total_count +=1
                     x = testFile.test(bits, len(bits))
 
@@ -105,7 +110,7 @@ def main():
 
                     writer[i].writerow(writeDict)
                     bits = ''
-
+            
         # overlapping_template_matching_test            
         elif i == 7:
             bits = ''
@@ -128,7 +133,7 @@ def main():
 
                     writer[i].writerow(writeDict)
                     bits = ''
-
+            
         #maurers_universal_test
         elif i==8:
             bits = ''
@@ -151,6 +156,7 @@ def main():
 
                     writer[i].writerow(writeDict)
                     bits = ''
+            
         #linear_complexity_test
         elif i==9:
 
@@ -174,6 +180,7 @@ def main():
 
                     writer[i].writerow(writeDict)
                     bits = ''
+            
         #random_excursion_test and random_excursion_variant_test
         elif i==13 or i==14:
             bits = ''
@@ -200,7 +207,9 @@ def main():
                     writer[i].writerow(writeDict)
                     bits = ''
         else:
+            
             for line in fi:
+                
                 total_count +=1
                 if fieldnames[i] != None:
 
@@ -219,14 +228,26 @@ def main():
                     	writeDict[fieldnames[i][j+1]] = x[j]
 
                     writer[i].writerow(writeDict)
+            
+            
+            
+
         writeDict = {}
+        print(i, total_count)
         writeDict[fieldnames[i][len(fieldnames[i])-1]] = float(success_count)/total_count
         writeDict[fieldnames[i][len(fieldnames[i])-2]] = p_average/total_count
-
         writer[i].writerow(writeDict)
+        
         print("p_average = " + str(p_average/total_count))
         print("passed percentage = " + str(float(success_count)/total_count))
         print("Test "+ str(i+1) + ": " + testlist[i] + " finished!")       	
-
+    for i in range(13):
+        print output[i]
+        print i
+        plot.plot(output[i],i)
+    print output[4]
+    print 4
+    plot.plot(output[4],4)
+    
 if __name__ == "__main__":
     main()
