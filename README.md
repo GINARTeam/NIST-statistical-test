@@ -1,12 +1,12 @@
 [![](https://www.ginar.io/wp-content/themes/ginar/assets/img/logo1.svg)](https://ginar.io)
 # Statistical test
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://github.com/ginarteam) [![Build  https://gitter.im/{ORG-or-USERNAME}/{REPO-NAME}](https://badges.gitter.im/Join%20Chat.svg)](https://t.me/GINAR_io) 
+[![](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://github.com/ginarteam) [![](https://img.shields.io/badge/Telegram-Group-blue.svg)](https://t.me/GINAR_io) 
 
 
 GINAR is a blockchain technology company specializing in providing a decentralized random number generator. Random Number Generation, or RNG, is a key component to applications that benefit from true randomness. GINAR is set to release a best-in-class decentralized.
 - Random Number Generator (dRNG) that will change the financial, gambling, online gaming, and IOT industry by providing the fastest, most secure and easily verifiable service, ..
 
-- For more detail about GINAR: Read our white-paper -> [![Inline docs](https://camo.githubusercontent.com/77e7cdcf1992654efde98939841b0312445f3e48/68747470733a2f2f696e63682d63692e6f72672f6173736574732f62616467652d6578616d706c652d62373166396538333333313866363666363462336632333837373131333035312e737667)](https://www.ginar.io/whitepaper-v2.0.pdf)
+- For more detail about GINAR: Read our white-paper -> [![](hhttps://img.shields.io/badge/docs-latest-af1a97.svg)](https://www.ginar.io/whitepaper-v2.0.pdf)
 
 This is implementation of NIST's statistical test suite for Random Number Generator (RNG) that apply to GINAR RNG    
 
