@@ -36,6 +36,8 @@ You need a dataset of random number for the test. We have built a function that 
 - Initialize your session key
 - Copy the init-session-key link (url)
 
+(More detail, please visit our [documentation website](https://docs.ginar.io))
+
 This test suite requires 8000 numbers as minimum. We recommend using 2000000 numbers.
 ### Run the test
 ```sh
